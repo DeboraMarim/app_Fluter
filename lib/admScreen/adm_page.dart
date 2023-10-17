@@ -11,8 +11,9 @@ class AdmScreen extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Column(
-            children: <Widget>[
+          SingleChildScrollView(
+            child: Column( 
+              children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(top: 55.0),
                 child: ClipRRect(
@@ -198,6 +199,7 @@ class AdmScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
           ),
         ],
       ),
